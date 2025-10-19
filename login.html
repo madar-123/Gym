@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="img/logo.png">
+    
+</head>
+<style>
+    body{
+    background-color: black;
+    background-size: 100%;
+}
+.logo{
+    width: 100px;
+    float: inline-start;
+    margin-left: 10px;
+}
+footer{
+    color: white;
+    text-align: center;
+    background-color: black;
+    padding: 20px;
+}
+.mh h1{
+    font-family: Wide Latin;
+    color: aliceblue;
+    text-align: left;
+    float: inline-start;
+    margin-top: 50px;
+    margin-left: 20px;
+    font-size: 50px;
+}
+.navbar {
+    padding-top: 50px;
+    padding-left: 12%;
+    text-transform: capitalize;
+    font-family: Stencil;
+    overflow: hidden;
+    background:transparent;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: yellow;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    font-family: inherit;
+    margin: 0;
+    background:transparent;
+    color: yellow;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+    color: white;   
+}
+.dropdown-content {
+    display: none;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color:white;
+    padding: 5px 0px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
+.dropdown-content a:hover {
+    color:slateblue;
+    background: transparent;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+} 
+.nested-dropdown {
+    position: relative;
+}
+.nested-dropdown-content {
+    display: none;
+    position: absolute;
+    left: 100%;
+    background-image: url(img/bg2.jpg);
+    top: 0;
+    color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+}
+.nested-dropdown-content a{
+    color:black;
+}
+.nested-dropdown:hover .nested-dropdown-content {
+    display: block;
+}
+    body{
+        background-image: url(img/2.jpeg);
+        background-size: cover;
+    }
+    .login{
+        backdrop-filter: blur(5px);
+        margin-left: 20%;
+        box-shadow: 10px 2px 30px color-mix(in hsl shorter hue, white 80%, blue 40%);
+        margin-top: 100px;
+        color: aliceblue;
+        text-align: center;
+        background:transparent;
+        max-width: 50%;
+        padding: 50px
+    }
+    .login h2{
+        font-size: 50px;
+    }
+    #mail{
+        background: transparent;
+        color: aliceblue;
+        margin: 20px;
+        font-size: 20px;
+    }
+    #pass{
+        margin: 20px;
+        background: transparent;
+        color: aliceblue;
+        font-size: 20px;
+    }
+    #mai{
+        background: transparent;
+        color: aliceblue;
+        margin: 20px;
+        font-size: 20px;
+    }
+    #pas{
+        margin: 20px;
+        background: transparent;
+        color: aliceblue;
+        font-size: 20px;
+    }
+    .submit{
+        color: aliceblue;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding: 5px 20px;
+        font-size: 15px;
+        background: transparent;
+        margin-left: 1%;
+        border-radius: 20px;
+    }
+    p{
+        font-size: 20px;
+        margin: auto;
+    }
+    #a{
+        color: whitesmoke;
+        font-size: 20px;
+        margin: auto;
+    }
+    #a:hover{
+        color: violet;
+    }
+    .submit:hover{
+        backdrop-filter: blur(20px);
+        border: solid blue 2px;
+    }
+</style>
+<body><img src="/img/logo.png" class="logo" alt="logo">
+    <section class="mh">
+        <h1>Mh GYM</h1>
+        <div class="navbar">
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <div class="dropdown">
+                <button class="dropbtn">GYM Workouts</button>
+                <div class="dropdown-content">
+                    <div class="nested-dropdown">
+                        <a href="#">Chest</a>
+                        <div class="nested-dropdown-content">
+                            <a href="/gym/upperchest.html">Upper Chest</a>
+                            <a href="/gym/middle chest.html">Middle Chest</a>
+                            <a href="/gym/lower chest.html">Lower CHest</a>
+                        </div>
+                    </div>
+                    <a href="/gym/back.html">Back</a>
+                    <a href="/gym/biecepes.html">Bicepes</a>
+                    <a href="/gym/tricepes.html">Tricepes</a>
+                    <div class="nested-dropdown">
+                        <a href="#">Abs</a>
+                        <div class="nested-dropdown-content">
+                            <a href="/gym/abs.html">Abs</a>
+                            <a href="/gym/core.html">Core</a>
+                        </div>
+                    </div>
+                    <a href="/gym/shoulder.html">Shoulder</a>
+                    <a href="/gym/legs.html">Legs</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Home Workouts</button>
+                <div class="dropdown-content">
+                    <div class="nested-dropdown">
+                        <a href="#">Chest</a>
+                        <div class="nested-dropdown-content">
+                            <a href="/home/upperchest.html">Upper Chest</a>
+                            <a href="/home/middle chest.html">Middle Chest</a>
+                            <a href="/home/lower chest.html">Lower CHest</a>
+                        </div>
+                    </div>
+                    <a href="/home/back.html">Back</a>
+                    <a href="/home/bieceps.html">Bicepes</a>
+                    <a href="/home/tricepes.html">Tricepes</a>
+                    <div class="nested-dropdown">
+                        <a href="#">Abs</a>
+                        <div class="nested-dropdown-content">
+                            <a href="/gym/abs.html">Abs</a>
+                            <a href="/gym/core.html">Core</a>
+                        </div>
+                    </div>
+                    <a href="/gym/shoulder.html">Shoulder</a>
+                    <a href="/gym/legs.html">Legs</a>
+                </div>
+            </div>
+        <a href="../contact.html">Contact</a>
+            <a href="../login.html">Login</a>
+        </div>
+    </section>
+    <form action="">
+    <div class="login">
+        <h2>MemberShip Login</h2>
+        <label for="mail" id="mail">Email</label><br>
+        <input type="email" id="mai" placeholder="Email"><br>
+        <label for="pass" id="mail">Password</label><br>
+        <input type="password" id="pas" placeholder="Password"><br>
+        <button class="submit">Submit</button>
+        <p>Forget Password</p>
+        <a href="/create.html" id="a">Create Account</a>
+    </div>
+    </form>
+</body>
+<footer>
+    <p>&copy;2024 Mh GYM Website.All rights reserved developed by <a href="https://madar-123.github.io/portifolio_reactjs/">Madar vali</a></p>
+</footer>
+</html>

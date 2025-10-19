@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<style>
+    body{
+        background-image: url(./img/bg2.jpg);
+        background-size: cover;
+    }
+    legend{
+        border: solid blue;
+        border-radius: 0px 25px;
+        padding: 7px;
+    }
+    .hidden{
+        display: none;
+    }
+    .select-box{
+        width: 100%;
+    }
+    input[type="text"],input[type="email"],input[type="number"],input[type="password"],textarea,select,option{
+        background: transparent;
+    }
+</style>
+<body>
+    <form action="">
+        <h1 style="text-align: center;">Registration for MemberShip</h1>
+        <fieldset>
+            <legend>Personal Details</legend>
+            <table class="register" cellspacing="10px">
+                <tr class="table-row">
+                    <td><label for="">Full Name</label></td>
+                    <td><input type="text" name="" id=""></td>
+                </tr>
+                <tr class="table-row">
+                    <td><label for="">Age</label></td>
+                    <td><input type="number" name="" id=""></td>
+                    <td><label for="">Height</label></td>
+                    <td><input type="number" name="" id=""></td>
+                     <td><label for="">Weight</label></td>
+                    <td><input type="number" name="" id=""></td>
+                </tr>
+                <tr class="table-row">
+                    <td><label for="">Phone Number</label></td>
+                    <td><input type="number" name="" id=""></td>
+                    <td><label for="">Email</label></td>
+                    <td><input type="email" name="" id=""></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Address</legend>
+            <table>
+                <tr class="table-row">
+                    <td><label for="">Address</label></td>
+                  <td><textarea name="" id="" rows="3"></textarea></td>
+                    <td><label for="">Hometown</label></td>
+                    <td><input type="text" name="" id=""></td>
+                    <td><label for="">District</label></td>
+                    <td><input type="text" name="" id=""></td>
+                    <td><label for="">State</label></td>
+                    <td><input type="text" name="" id=""></td>
+                    <td><label for="">Pincode</label></td>
+                    <td><input type="number" name="" id=""></td>
+                </tr>
+                <tr class="table-row">
+                    <td><label for="">Select plan</label></td>
+                    <td><Select class="select-box">
+                        <option value="">1Month</option>
+                        <option value="">3Month</option>
+                        <option value="">6Month</option>
+                        <option value="">1Year</option>
+                      <!--  <option value="" id="hide">Other</option>-->
+                    </Select></td>
+                    
+                    <td><label for="">Password</label></td>
+                    <td><input type="password" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="text" id="unhide" class="hidden text"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+<!---
+    <Script>
+        let unhideField=document.getElementById("hide")
+        let fieldunhide=document.getElementById("unhide");
+        unhideField.addEventListener('click',()=>{
+            fieldunhide.classList.remove("hidden");
+            console.log("done")
+        });-->
+    </Script>
+</body>
+</html>
